@@ -1,5 +1,3 @@
-#import PokemonAbilities
-
 class StarterPokemon:
 
     """
