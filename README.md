@@ -75,11 +75,11 @@ After running `sphinx-quickstart`, an `index.rst` file is created that serves as
 The standard reST inline markup consists of
 - one asterisk: `*text*` for emphasis (italics),
 - two asterisks: `**text**` for strong emphasis (boldface), and
-- backquotes: ```text``` for code samples.
+- backquotes: `` `text` `` for code samples.
 
 In addition, reST also implements [directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives), which are blocks of explicit markup which can have arguments, options and content. We'll see some examples of that in our module documentation. 
 
-For now, you can see some directives in the `index.rst` file: `toctree` is a reStructuredText directive; `maxdepth` and `caption` are options for this directive, and their values are `2` and `Contents:`. In addition, you can see the `:ref:` *role* in this file. Sphinx implements [interpreted text roles](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html) to insert semantic markup into documents. For example, `:ref:`search`` implements the role `ref` with the content `search` - in this particular case, we are cross-referencing a location, in this case creating a link to the document with label `search`. 
+For now, you can see some directives in the `index.rst` file: `toctree` is a reStructuredText directive; `maxdepth` and `caption` are options for this directive, and their values are `2` and `Contents:`. In addition, you can see the `:ref:` *role* in this file. Sphinx implements [interpreted text roles](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html) to insert semantic markup into documents. For example, ``:ref:`search` `` implements the role `ref` with the content `search` - in this particular case, we are cross-referencing a location, in this case creating a link to the document with label `search`. 
 
 We'll see concrete examples of this in the NumPy documentation, but you can check out a [nice summary of reST syntax](https://sphinx-tutorial.readthedocs.io/step-1/) and a longer [reST primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html).
 
