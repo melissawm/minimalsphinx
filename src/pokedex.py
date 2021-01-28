@@ -103,4 +103,4 @@ class Squirtle(StarterPokemon):
         self.name = "Squirtle"
         self.pokemon_type = {"water"}
         self.ability = "Torrent"
-        self.evolution = "Wartortle"
+        self.evolution = ["Wartortle"]
