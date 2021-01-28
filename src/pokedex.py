@@ -20,14 +20,15 @@ class StarterPokemon:
         Shows the Pokémon name and its evolution.
 
         Usage:
-        ------
 
-        >>> import pokedex
-        >>> friend = pokedex.Bulbasaur()
-        >>> friend.who_is_that_pokemon()
-        This pokemon is Bulbasaur.
-        It will evolve into Ivysaur.
-        >>>
+        .. doctest::
+
+           >>> import pokedex
+           >>> friend = pokedex.Bulbasaur()
+           >>> friend.who_is_that_pokemon()
+           This pokemon is Bulbasaur.
+           It will evolve into Ivysaur, Venusaur, Mega Venusaur, Gigantamax Venusaur.
+           >>>
         """
         print(f"This pokemon is {self.name}.")
         print(f"It will evolve into {', '.join(self.evolution)}.")
