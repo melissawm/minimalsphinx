@@ -12,50 +12,50 @@ This repo contains a very simple example of how to set up and use Sphinx to gene
 
 0. Install Python on your machine. Depending on your operating system, the instructions may vary.
 1. Create and activate a virtual environment for your project. You can use conda for this:
-   
+
    ```bash
    $ conda create --name <environment_name>
    $ conda activate <environment_name>
    ```
-   
-   Another option is to use virtualenv. Create a 
-   
+
+   Another option is to use virtualenv. Create a
+
    ```bash
-   $ pip install virtualenv  # not needed if you have used virtualenv before 
+   $ pip install virtualenv  # not needed if you have used virtualenv before
    $ virtualenv venv
    $ source venv/bin/activate
    ```
-   
+
    (A subtle difference between both methods is that the virtualenv environment you created lives in the folder where it was created, whereas the conda environment will work in whatever folder you are on.)
-   
+
 2. Install sphinx:
 
 	```bash
 	$ conda install sphinx
 	```
-	
-	or 
-	
-	```bash 
+
+	or
+
+	```bash
 	$ pip install sphinx
 	```
-	
+
 3. Initiate sphinx:
 
 	```bash
 	$ sphinx-quickstart
 	```
-	
+
 	You can set default values for most of the answers, but you should fill your name and the project's name. The final message should say:
-	
+
 	> Finished: An initial directory structure has been created.
 
 	> You should now populate your master file /home/melissa/projects/minimalsphinx/index.rst and create other documentation source files. Use the Makefile to build the docs, like so:
     >     make builder
     > where "builder" is one of the supported builders, e.g. html, latex or linkcheck
 
-	This means that once you have your documentation, you can choose in which format to build it to. For example, to build an html version of the docs, you can use 
-	
+	This means that once you have your documentation, you can choose in which format to build it to. For example, to build an html version of the docs, you can use
+
 	```bash
 	$ make html
 	```
@@ -70,16 +70,16 @@ We'll create a very simple Python module to test our setup. It's a starter Poké
 
 ### The `index.rst` file and the reStructuredText format
 
-After running `sphinx-quickstart`, an `index.rst` file is created that serves as the entry-point to your module documentation (unless you want to customize this - we'll see how you can do that below). It will likely contain only a basic structure in a [reStructuredText format](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html). reStructuredText, or reST, is a markup syntax that allows you to autogenerate documentation, including inline markup, custom content and powerful linking and referencing features. 
+After running `sphinx-quickstart`, an `index.rst` file is created that serves as the entry-point to your module documentation (unless you want to customize this - we'll see how you can do that below). It will likely contain only a basic structure in a [reStructuredText format](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html). reStructuredText, or reST, is a markup syntax that allows you to autogenerate documentation, including inline markup, custom content and powerful linking and referencing features.
 
 The standard reST inline markup consists of
 - one asterisk: `*text*` for emphasis (italics),
 - two asterisks: `**text**` for strong emphasis (boldface), and
 - backquotes: `` `text` `` for code samples.
 
-In addition, reST also implements [directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives), which are blocks of explicit markup which can have arguments, options and content. We'll see some examples of that in our module documentation. 
+In addition, reST also implements [directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives), which are blocks of explicit markup which can have arguments, options and content. We'll see some examples of that in our module documentation.
 
-For now, you can see some directives in the `index.rst` file: `toctree` is a reStructuredText directive; `maxdepth` and `caption` are options for this directive, and their values are `2` and `Contents:`. In addition, you can see the `:ref:` *role* in this file. Sphinx implements [interpreted text roles](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html) to insert semantic markup into documents. For example, ``:ref:`search` `` implements the role `ref` with the content `search` - in this particular case, we are cross-referencing a location, in this case creating a link to the document with label `search`. 
+For now, you can see some directives in the `index.rst` file: `toctree` is a reStructuredText directive; `maxdepth` and `caption` are options for this directive, and their values are `2` and `Contents:`. In addition, you can see the `:ref:` *role* in this file. Sphinx implements [interpreted text roles](https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html) to insert semantic markup into documents. For example, ``:ref:`search` `` implements the role `ref` with the content `search` - in this particular case, we are cross-referencing a location, in this case creating a link to the document with label `search`.
 
 We'll see concrete examples of this in the NumPy documentation, but you can check out a [nice summary of reST syntax](https://sphinx-tutorial.readthedocs.io/step-1/) and a longer [reST primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html).
 
@@ -125,9 +125,9 @@ to see the results.
 Because we want to add more to our documentation than just the docstrings, let's add some custom pages to our project.
 
 1. Move the API documentation to a separate page.
-   
+
    First, let's create a new `apidocs.rst` file and move the `automodule` directive to this new file. After this, we'll add `apidocs` to our ToC Tree - our Table of Contents in the main `index.rst` file.
-   
+
 2. Add a Quickstart page to our documentation
 
    We'll write the *Quickstart* page separately.
@@ -138,6 +138,7 @@ Finally, we'll check the `sphinx.ext.intersphinx` extension. Adding this to our 
 
 ## References
 
+- [Sphinx tutorial](https://www.sphinx-doc.org/en/master/tutorial/index.html)
 - [Sphinx documentation](https://www.sphinx-doc.org/en/master/)
 - [Matplotlib Sphinx tutorial](https://matplotlib.org/sampledoc/)
 - [Sphinx tutorial](https://sphinx-tutorial.readthedocs.io/) by Eric Holscher
