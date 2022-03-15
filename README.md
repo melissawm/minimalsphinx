@@ -54,7 +54,7 @@ This repo contains a very simple example of how to set up and use Sphinx to gene
     >     make builder
     > where "builder" is one of the supported builders, e.g. html, latex or linkcheck
 
-	This means that once you have your documentation, you can choose in which format to build it to. For example, to build an html version of the docs, you can use
+	This means that once you have your documentation, you can choose in which format to build it to. For example, to build an html version of the docs, you can navigate to the `docs/` folder and use
 
 	```bash
 	$ make html
