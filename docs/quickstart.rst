@@ -30,8 +30,6 @@ Usage
 You can create an instance of Bulbasaur called ``friend``, for example, by doing
 
 .. code::
-   
+
    >>> import pokedex
    >>> friend = pokedex.Bulbasaur()
-
-

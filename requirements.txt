@@ -1,2 +1,4 @@
 sphinx
 furo
+black
+pre-commit

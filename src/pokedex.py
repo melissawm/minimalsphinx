@@ -50,10 +50,7 @@ class Bulbasaur(StarterPokemon):
         self.name = "Bulbasaur"
         self.pokemon_type = {"grass", "poison"}
         self.ability = "Overgrow"
-        self.evolution = ["Ivysaur",
-                          "Venusaur",
-                          "Mega Venusaur",
-                          "Gigantamax Venusaur"]
+        self.evolution = ["Ivysaur", "Venusaur", "Mega Venusaur", "Gigantamax Venusaur"]
 
 
 class Charmander(StarterPokemon):
