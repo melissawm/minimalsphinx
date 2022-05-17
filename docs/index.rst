@@ -13,7 +13,8 @@ Welcome to Pokédex's documentation!
 
    quickstart
    apidocs
-
+   history
+   tags/index
 
 
 Indices and tables
