@@ -7,26 +7,11 @@ from docutils import nodes
 
 # TAGLINK is used to generate the link from within each narrative page
 TAGLINK = "tags/%s.html"
-# ROOTTAGLINK
-ROOTTAGLINK = "tags/%s.html"
-SERMONTAGLINK = "../tags/%s.html"
 TAGSTART = ".. tags::"
-
-
-def conditional_write(filename, new):
-    if os.path.exists(filename):
-        with open(filename, "f", encoding="utf8") as f:
-            old = f.read()
-    else:
-        old = None
-    if new != old:
-        with open(filename, "w", encoding="utf8") as f:
-            f.write(new)
-
 
 class TagLinks(Directive):
     """Custom directive for adding tags to Sphinx-generated files.
-    
+
     Loosely based on https://stackoverflow.com/questions/18146107/how-to-add-blog-style-tags-in-restructuredtext-with-sphinx
 
     See also https://docutils.sourceforge.io/docs/howto/rst-directives.html
@@ -85,7 +70,8 @@ class Tag:
             link = item.filename.replace("./", "")
             content.append(f"    {item.title} <../{link}>")
         content.append("")
-        conditional_write(self.filename, "\n".join(content))
+        with open(self.filename, "w", encoding="utf8") as f:
+            f.write("\n".join(content))
 
 
 class Entry:
@@ -133,7 +119,8 @@ def tagpage(tags):
         content.append(f"    {tag.name} <{tag.name}.rst>")
     content.append("")
     filename = os.path.join(".", "tags/index.rst")
-    conditional_write(filename, "\n".join(content))
+    with open(filename, "w", encoding="utf8") as f:
+        f.write("\n".join(content))
 
 
 def assign_entries():
