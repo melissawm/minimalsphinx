@@ -14,6 +14,7 @@ class StarterPokemon:
         self.evolution = None
         self.ability = None
         self.pokemon_type = None
+        self.base_stats = dict()
 
     def who_is_that_pokemon(self):
         """

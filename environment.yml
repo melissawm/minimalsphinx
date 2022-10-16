@@ -6,4 +6,3 @@ dependencies:
   - sphinx
   - furo
   - sphinx-design
-  - sphinx-tags
