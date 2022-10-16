@@ -5,3 +5,5 @@ dependencies:
   - python=3.9
   - sphinx
   - furo
+  - sphinx-design
+  - sphinx-tags

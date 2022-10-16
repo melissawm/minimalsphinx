@@ -1,2 +1,4 @@
 sphinx
 furo
+sphinx-tags
+sphinx-design
