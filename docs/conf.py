@@ -29,7 +29,8 @@ author = 'melissawm'
 # ones.
 extensions = [ 'sphinx.ext.autodoc',
                'sphinx.ext.doctest',
-               'sphinx.ext.intersphinx'
+               'sphinx.ext.intersphinx',
+               'sphinx_tabs.tabs',
               ]
 
 # Add any paths that contain templates here, relative to this directory.
