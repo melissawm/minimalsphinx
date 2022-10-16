@@ -8,6 +8,8 @@ So as a user of Sphinx, your main job will be writing these text files. This mea
 
 This repo contains a very simple example of how to set up and use Sphinx to generate Python documentation.
 
+See the rendered version of the documentation at [https://minimalsphinx.readthedocs.io](https://minimalsphinx.readthedocs.io)
+
 ## Basic instructions
 
 0. Install Python on your machine. Depending on your operating system, the instructions may vary.
