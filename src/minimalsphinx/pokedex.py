@@ -45,6 +45,12 @@ class Bulbasaur(StarterPokemon):
     Along with :class:`Charmander` and :class:`Squirtle`, Bulbasaur is one of
     three starter Pokémon of Kanto available at the beginning of Pokémon Red,
     Green, Blue, FireRed, and LeafGreen.
+
+    .. warning:: Be careful!
+
+       Bulbasaur is a grass-type Pokémon, but Mega Venusaur and Gigantamax
+       Venusaur are also Poison Pokémon.
+
     """
 
     def __init__(self):

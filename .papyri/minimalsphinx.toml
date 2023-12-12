@@ -1,0 +1,10 @@
+[global]
+module = 'minimalsphinx'
+logo = "minsphinx-logo.png"
+docs_path = "docs"
+exec = true
+exec_failure = 'raise'
+
+[meta]
+github_slug = 'melissawm/minimalsphinx'
+tag = '{{version}}'

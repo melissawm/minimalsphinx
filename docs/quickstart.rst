@@ -71,5 +71,8 @@ You can create an instance of Bulbasaur called ``friend``, for example, by doing
 
 .. code::
 
-   >>> import pokedex
+   >>> from minimalsphinx import pokedex
    >>> friend = pokedex.Bulbasaur()
+   >>> friend.who_is_that_pokemon()
+   This pokemon is Bulbasaur.
+   It will evolve into Ivysaur, Venusaur, Mega Venusaur, Gigantamax Venusaur.

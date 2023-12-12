@@ -1,0 +1,21 @@
+[project]
+name = "minimalsphinx"
+authors = [{name = "melissawm", email = "melissawm@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+version = "0.0.1"
+
+keywords = [
+    "documentation",
+    "sphinx",
+]
+
+dependencies = [
+    "sphinx>=5.1",
+    "furo",
+    "sphinx-design",
+]
+
+[project.urls]
+Home = "https://github.com/melissawm/minimalsphinx"

@@ -1,5 +1,5 @@
 API Documentation
 =================
 
-.. automodule:: pokedex
+.. automodule:: minimalsphinx
    :members:
