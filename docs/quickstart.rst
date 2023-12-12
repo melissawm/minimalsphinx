@@ -1,6 +1,8 @@
 Quickstart
 ==========
 
+.. tags:: testing!🎉
+
 The Pokédex package contains basic information about the three
 `starter Pokémon <https://bulbapedia.bulbagarden.net/wiki/Starter_Pok%C3%A9mon>`_
 from the `core series`_. These are detailed in :doc:`apidocs`.

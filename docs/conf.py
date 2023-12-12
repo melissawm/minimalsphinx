@@ -31,7 +31,10 @@ extensions = [ 'sphinx.ext.autodoc',
                'sphinx.ext.doctest',
                'sphinx.ext.intersphinx',
                'sphinx_design',
+               'sphinx_tags',
               ]
+
+tags_create_tags = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

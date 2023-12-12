@@ -6,6 +6,7 @@
 Welcome to Pokédex's documentation!
 ===================================
 
+See also 
 
 .. toctree::
    :maxdepth: 2
