@@ -104,6 +104,10 @@ class Squirtle(StarterPokemon):
     Along with :class:`Bulbasaur` and :class:`Charmander`, Squirtle is one of
     three starter Pokémon of Kanto available at the beginning of Pokémon Red,
     Green, Blue, FireRed, and LeafGreen.
+
+    .. warning:: title
+
+        This is an important directive for testing.
     """
 
     def __init__(self):
