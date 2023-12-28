@@ -6,7 +6,12 @@ class StarterPokemon:
     LeafGreen.
 
     Actual Pokémon can be created by calling the specific classes defining the
-    starter Pokémon types. You can see more details about them at :ref:`starter`.
+    starter Pokémon types. Pokémon can be carried in a |pokeball|.
+
+    You can see more details about Pokémon at :ref:`starter`.
+
+    .. |pokeball| replace:: **pokeball.png**
+
     """
 
     def __init__(self):
@@ -51,9 +56,14 @@ class Bulbasaur(StarterPokemon):
        Bulbasaur is a grass-type Pokémon, but Mega Venusaur and Gigantamax
        Venusaur are also Poison Pokémon.
 
+    Attributes
+    ----------
+    nickname: str
+        The nickname of the pokemon.
+
     """
 
-    def __init__(self):
+    def __init__(self, nickname=None):
         self.name = "Bulbasaur"
         self.pokemon_type = {"grass", "poison"}
         self.ability = "Overgrow"
@@ -61,6 +71,11 @@ class Bulbasaur(StarterPokemon):
                           "Venusaur",
                           "Mega Venusaur",
                           "Gigantamax Venusaur"]
+        self._nickname = nickname
+
+    @property
+    def nickname(self):
+        return self._nickname
 
 
 class Charmander(StarterPokemon):
