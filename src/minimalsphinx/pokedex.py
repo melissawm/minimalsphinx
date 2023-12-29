@@ -62,6 +62,13 @@ class Bulbasaur(StarterPokemon):
     nickname: str
         The nickname of the pokemon.
 
+    Notes
+    -----
+
+    See wikipedia_ for more details.
+
+    .. _wikipedia: https://en.wikipedia.org/wiki/Bulbasaur
+
     """
 
     def __init__(self, nickname=None):
