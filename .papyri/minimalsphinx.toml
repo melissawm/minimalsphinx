@@ -2,7 +2,7 @@
 module = 'minimalsphinx'
 logo = "minsphinx-logo.png"
 docs_path = "docs"
-exec = true
+execute_doctests = true
 exec_failure = 'raise'
 
 [meta]
