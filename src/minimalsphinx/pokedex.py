@@ -2,7 +2,7 @@ class StarterPokemon:
 
     """
     This class defined one of the starter Pokémon given to the player by
-    Professor Oak at the start of Pokémon Red, Green, Blue, FireRed, and
+    |professor| at the start of Pokémon Red, Green, Blue, FireRed, and
     LeafGreen.
 
     Actual Pokémon can be created by calling the specific classes defining the
@@ -10,8 +10,9 @@ class StarterPokemon:
 
     You can see more details about Pokémon at :ref:`starter`.
 
-    .. |pokeball| replace:: **pokeball.png**
+    .. |pokeball| image:: https://upload.wikimedia.org/wikipedia/commons/b/b1/Pok%C3%A9ball.png
 
+    .. |professor| replace:: *Professor Oak*
     """
 
     def __init__(self):
