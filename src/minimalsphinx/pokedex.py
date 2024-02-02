@@ -6,11 +6,9 @@ class StarterPokemon:
     LeafGreen.
 
     Actual Pokémon can be created by calling the specific classes defining the
-    starter Pokémon types. Pokémon can be carried in a |pokeball|.
+    starter Pokémon types. Pokémon can be carried in a Pokéball.
 
     You can see more details about Pokémon at :ref:`starter`.
-
-    .. |pokeball| image:: https://upload.wikimedia.org/wikipedia/commons/b/b1/Pok%C3%A9ball.png
 
     .. |professor| replace:: *Professor Oak*
     """
@@ -46,7 +44,7 @@ class Bulbasaur(StarterPokemon):
     Bulbasaur is a dual-type Grass/Poison Pokémon introduced in Generation I.
 
     It evolves into Ivysaur starting at level 16, which evolves into Venusaur
-    starting at level 32.
+    starting at level 32. Bulbasaur can be stored in a regular |pokeball|.
 
     Along with :class:`Charmander` and :class:`Squirtle`, Bulbasaur is one of
     three starter Pokémon of Kanto available at the beginning of Pokémon Red,
@@ -69,16 +67,15 @@ class Bulbasaur(StarterPokemon):
 
     .. _wikipedia: https://en.wikipedia.org/wiki/Bulbasaur
 
+    .. |pokeball| image:: https://upload.wikimedia.org/wikipedia/commons/b/b1/Pok%C3%A9ball.png
+
     """
 
     def __init__(self, nickname=None):
         self.name = "Bulbasaur"
         self.pokemon_type = {"grass", "poison"}
         self.ability = "Overgrow"
-        self.evolution = ["Ivysaur",
-                          "Venusaur",
-                          "Mega Venusaur",
-                          "Gigantamax Venusaur"]
+        self.evolution = ["Ivysaur", "Venusaur", "Mega Venusaur", "Gigantamax Venusaur"]
         self._nickname = nickname
 
     @property
