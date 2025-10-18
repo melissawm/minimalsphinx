@@ -14,8 +14,6 @@ Welcome to Pokédex's documentation!
    quickstart
    apidocs
 
-
-
 Indices and tables
 ==================
 
