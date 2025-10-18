@@ -44,21 +44,21 @@ Pokémon details
 
 For these three Pokémon, you can check out their pokédex entries below.
 
-.. md-tab-set::
+.. tab-set::
 
-   .. md-tab-item:: Bulbasaur
+   .. tab-item:: Bulbasaur
 
          * Seed Pokémon
          * Type: :bdg-success:`grass` :bdg-dark:`poison`
          * Abilities: Overgrow, Chlorophyll
 
-   .. md-tab-item:: Charmander
+   .. tab-item:: Charmander
 
          * Lizard Pokémon
          * Type: :bdg-warning:`fire`
          * Abilities: Blaze, Solar power
 
-   .. md-tab-item:: Squirtle
+   .. tab-item:: Squirtle
 
          * Tiny turtle Pokémon
          * Type: :bdg-primary:`water`
