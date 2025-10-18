@@ -13,13 +13,17 @@ See the rendered version of the documentation at [https://minimalsphinx.readthed
 ## Basic instructions
 
 0. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) on your machine. Depending on your operating system, the instructions may vary. uv can help us manage our virtual environments and dependencies, including Python itself.
-1. Run:
+1. Add the basic dependencies to your project. I recommend adding Sphinx itself, the furo theme and sphinx-design for some extra layout options.
+
+   ```bash
+   $ uv add --group docs sphinx furo sphinx-design
+   ```
+
+   This will install Python and all required packages, including `sphinx` itself and the `furo` Sphinx theme, in a virtual environment located in `.venv/`. To see the list of dependencies, check the "docs" dependency group configuration in the `pyproject.toml` file. To install these dependencies later, run:
 
    ```bash
    $ uv sync --all-groups
    ```
-
-   This will install Python and all required packages, including `sphinx` itself and the `furo` Sphinx theme, in a virtual environment located in `.venv/`. To see the list of dependencies, check the `pyproject.toml` file.
 
 3. Initiate sphinx
 
