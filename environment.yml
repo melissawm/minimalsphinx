@@ -1,8 +1,0 @@
-name: minimal-sphinx
-channels:
-  - conda-forge
-dependencies:
-  - python=3.12
-  - sphinx
-  - furo
-  - sphinx-design

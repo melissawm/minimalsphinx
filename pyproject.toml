@@ -1,0 +1,14 @@
+[project]
+name = "minimalsphinx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+docs = [
+    "furo>=2025.9.25",
+    "sphinx>=8.2.3",
+    "sphinx-design>=0.6.1",
+]
