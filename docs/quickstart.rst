@@ -20,6 +20,11 @@ As you can see in the :ref:`startpoke` image, these starter Pokémon have
 different types and abilities, and will evolve into different creatures as their
 level progresses.
 
+.. warning::
+
+   Choosing a starter Pokémon is an important decision that will affect your
+   journey. Choose carefully!
+
 Base Stats
 ~~~~~~~~~~
 
