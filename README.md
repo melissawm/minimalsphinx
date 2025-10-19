@@ -60,7 +60,7 @@ See the rendered version of the documentation at [https://minimalsphinx.readthed
 
 ## Documenting a Python module
 
-We'll create a very simple Python module to test our setup. It's a starter Pokédex, containing just the three starter Pokémon from the Kanto region.
+We'll create a very simple Python module to test our setup. It's a starter Pokédex, containing a few Pokémon including the three starter Pokémon from the Kanto region.
 
 ### The `index.rst` file and the reStructuredText format
 
@@ -69,7 +69,7 @@ After running `sphinx-quickstart`, an `index.rst` file is created that serves as
 The standard reST inline markup consists of
 - one asterisk: `*text*` for emphasis (italics),
 - two asterisks: `**text**` for strong emphasis (boldface), and
-- backquotes: `` `text` `` for code samples.
+- double backquotes: ` ``text`` ` for code samples.
 
 In addition, reST also implements [directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#directives), which are blocks of explicit markup which can have arguments, options and content. We'll see some examples of that in our module documentation.
 
@@ -81,7 +81,7 @@ We'll see concrete examples of this in the NumPy documentation, but you can chec
 
 In order to properly autogenerate our documentation, we must edit a configuration file called `conf.py`, which is created by `sphinx-quickstart` with default values. You should see this in the root folder of your project.
 
-For now, the first thing to customize is the project name and author, if you have to. After that, we'll add `'venv'` to the `exclude_patterns` list, if you're using venv to manage your developer environment. With this basic configuration we create the documentation with `make html`.
+For now, the first thing to customize is the project name and author, if you have to. After that, we'll add `'.venv'` to the `exclude_patterns` list, if you're using venv to manage your developer environment. With this basic configuration we create the documentation with `uv run make html`.
 
 ### Generating your module documentation
 
