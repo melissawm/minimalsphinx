@@ -1,0 +1,37 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main  # ou a branch que você deseja monitorar
+  workflow_dispatch:  # Para executar o workflow manualmente
+
+jobs:
+    deploy:
+      runs-on: ubuntu-latest
+      permissions:
+        contents: read
+        pages: write
+        id-token: write
+      steps:
+        - uses: actions/checkout@v5
+        - name: Setup Pages
+          uses: actions/configure-pages@v3
+        - name: Install uv
+          uses: astral-sh/setup-uv@v6
+        - name: "Set up Python"
+          uses: actions/setup-python@v5
+          with:
+            python-version-file: ".python-version"
+        - name: Install dependencies
+          run: |
+              uv sync --all-groups
+        - name: Build documentation
+          run: |
+              uv run make -C docs html
+        - name: Upload artifact
+          uses: actions/upload-pages-artifact@v3
+          with:
+            path: './docs/_build/html'
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v4
